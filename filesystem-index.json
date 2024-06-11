@@ -22,7 +22,9 @@
         "films": {
             "test.txt": null
         },
-        "print": {},
+        "print": {
+            "test.jpg": null
+        },
         "proactive": {},
         "social": {},
         "Themes": {

@@ -1177,6 +1177,15 @@ var add_icon_not_via_filesystem = function (options) {
 		...options,
 	}));
 };
+
+// add_icon_not_via_filesystem = function(option){
+// 	folder_view.add_item({
+// 		title: "Films",
+// 		iconID:"films",
+// 		open: function(){ systemExecuteFile("/desktop/Films"); },
+// 		is_system_folder: true
+// 	})
+// } 
 add_icon_not_via_filesystem({
 	title: "My Computer",
 	iconID: "my-computer",

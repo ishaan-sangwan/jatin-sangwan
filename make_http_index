@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# Function to walk the directory and build the JSON structure
+walk_directory() {
+    local dir="$1"
+    local json=""
+
+    json+="{"
+
+    # Get the list of files and directories in the current directory
+    local items=("$dir"/*)
+
+    # Loop through the items
+    for item in "${items[@]}"; do
+        # Check if it's a file or directory
+        if [ -d "$item" ]; then
+            # If it's a directory, recursively walk the directory
+            local dirname=$(basename "$item")
+            json+="\"$dirname\":$(walk_directory "$item"),"
+        elif [ -f "$item" ]; then
+            # If it's a file, add it to the JSON
+            local filename=$(basename "$item")
+            json+="\"$filename\":null,"
+        fi
+    done
+
+    # Remove the trailing comma
+    json=${json%,}
+
+    json+="}"
+    echo "$json"
+}
+
+# Check if directory is passed as argument
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <directory>"
+    exit 1
+fi
+
+# Get the directory from the argument
+directory="$1"
+
+# Check if the provided argument is a valid directory
+if [ ! -d "$directory" ]; then
+    echo "Error: $directory is not a valid directory"
+    exit 1
+fi
+
+# Output the JSON structure
+json_output=$(walk_directory "$directory")
+
+# Print the JSON output
+echo "$json_output"

@@ -18,13 +18,6 @@
     "CNAME": null,
     "CONTRIBUTING.md": null,
     "desktop": {
-        "activations": {},
-        "films": {
-            "test.txt": null
-        },
-        "print": {},
-        "proactive": {},
-        "social": {},
         "Themes": {
             "Ash.themepack": null,
             "Blue.themepack": null,
@@ -565,7 +558,6 @@
             "windows-default.css.map": null
         }
     },
-    "make_http_index": null,
     "mstile-150x150.png": null,
     "my-documents": {
         "Dropbox.url": null,
@@ -15944,5 +15936,6 @@
     "test2.sh": null,
     "test.json": null,
     "test.py": null,
+    "test.sh": null,
     "TODO.md": null
 }

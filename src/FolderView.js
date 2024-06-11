@@ -89,6 +89,11 @@ const system_folder_path_to_name = {
 	"/desktop/": "Desktop",
 	"/programs/": "Program Files",
 	"/recycle-bin/": "Recycle Bin",
+	"/desktop/films": "Films",
+	"/desktop/activations":"Activations",
+	"/desktop/print":"Print",
+	"/desktop/social":"Social",
+	"/desktop/proactive":"Pro Active"
 };
 const system_folder_name_to_path = Object.fromEntries(
 	Object.entries(system_folder_path_to_name).map(([key, value]) => [value, key])

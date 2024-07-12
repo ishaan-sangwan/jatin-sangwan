@@ -18,17 +18,16 @@ function dir_to_json() {
     fi
 
     # Add entry with filename and "null" value, optionally including filetype
-    if [[ -n "$filetype" ]]; then
-      json+="\"$filename.$filetype\": null,"
-    else
+    if [[ -f "$item" ]]; then
       json+="\"$filename\": null,"
+      
     fi
 
     # Recursively call for subdirectories
     if [[ -d "$item" ]]; then
       local child_json="$(dir_to_json "$item")"
       if [[ $? -eq 0 ]]; then  # Check for successful recursion
-        json+="$child_json,"
+        json+="\"$filename\":$child_json,"
       fi
     fi
   done

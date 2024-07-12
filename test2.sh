@@ -38,8 +38,7 @@ function dir_to_json() {
 
   # Close JSON object
   json+="}"
-
-  echo "$(jq . <<< "$json")"
+  echo $json
 }
 
 root_dir="."  # Change this to your desired starting directory

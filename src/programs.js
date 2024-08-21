@@ -1200,49 +1200,49 @@ add_icon_not_via_filesystem({
 	// file_path: "/my-documents/",
 	is_system_folder: true,
 });
-add_icon_not_via_filesystem({
-	title: "Network Neighborhood",
-	iconID: "network",
-	open: function () { systemExecuteFile("/network-neighborhood"); },
-	// file_path: "/network-neighborhood/",
-	is_system_folder: true,
-});
+// add_icon_not_via_filesystem({
+// 	title: "Network Neighborhood",
+// 	iconID: "network",
+// 	open: function () { systemExecuteFile("/network-neighborhood"); },
+// 	// file_path: "/network-neighborhood/",
+// 	is_system_folder: true,
+// });
 add_icon_not_via_filesystem({
 	title: "Recycle Bin",
 	iconID: "recycle-bin",
 	open: function () { Explorer("https://www.epa.gov/recycle/"); },
 	is_system_folder: true,
 });
-add_icon_not_via_filesystem({
-	title: "My Pictures",
-	iconID: "folder",
-	open: function () { systemExecuteFile("/my-pictures"); },
-	// file_path: "/my-pictures/",
-	is_system_folder: true,
-});
+// add_icon_not_via_filesystem({
+// 	title: "My Pictures",
+// 	iconID: "folder",
+// 	open: function () { systemExecuteFile("/my-pictures"); },
+// 	// file_path: "/my-pictures/",
+// 	is_system_folder: true,
+// });
 add_icon_not_via_filesystem({
 	title: "Internet Explorer",
 	iconID: "internet-explorer",
 	open: function () { Explorer("https://www.google.com/"); }
 });
-add_icon_not_via_filesystem({
-	title: "Paint",
-	iconID: "paint",
-	open: Paint,
-	shortcut: true
-});
+// add_icon_not_via_filesystem({
+// 	title: "Paint",
+// 	iconID: "paint",
+// 	open: Paint,
+// 	shortcut: true
+// });
 add_icon_not_via_filesystem({
 	title: "Minesweeper",
 	iconID: "minesweeper",
 	open: Minesweeper,
 	shortcut: true
 });
-add_icon_not_via_filesystem({
-	title: "Sound Recorder",
-	iconID: "speaker",
-	open: SoundRecorder,
-	shortcut: true
-});
+// add_icon_not_via_filesystem({
+// 	title: "Sound Recorder",
+// 	iconID: "speaker",
+// 	open: SoundRecorder,
+// 	shortcut: true
+// });
 add_icon_not_via_filesystem({
 	title: "Solitaire",
 	iconID: "solitaire",
@@ -1261,30 +1261,30 @@ add_icon_not_via_filesystem({
 	open: openWinamp,
 	shortcut: true
 });
-add_icon_not_via_filesystem({
-	title: "3D Pipes",
-	iconID: "pipes",
-	open: Pipes,
-	shortcut: true
-});
-add_icon_not_via_filesystem({
-	title: "3D Flower Box",
-	iconID: "pipes",
-	open: FlowerBox,
-	shortcut: true
-});
-add_icon_not_via_filesystem({
-	title: "MS-DOS Prompt",
-	iconID: "msdos",
-	open: CommandPrompt,
-	shortcut: true
-});
-add_icon_not_via_filesystem({
-	title: "Calculator",
-	iconID: "calculator",
-	open: Calculator,
-	shortcut: true
-});
+// add_icon_not_via_filesystem({
+// 	title: "3D Pipes",
+// 	iconID: "pipes",
+// 	open: Pipes,
+// 	shortcut: true
+// });
+// add_icon_not_via_filesystem({
+// 	title: "3D Flower Box",
+// 	iconID: "pipes",
+// 	open: FlowerBox,
+// 	shortcut: true
+// });
+// add_icon_not_via_filesystem({
+// 	title: "MS-DOS Prompt",
+// 	iconID: "msdos",
+// 	open: CommandPrompt,
+// 	shortcut: true
+// });
+// add_icon_not_via_filesystem({
+// 	title: "Calculator",
+// 	iconID: "calculator",
+// 	open: Calculator,
+// 	shortcut: true
+// });
 add_icon_not_via_filesystem({
 	title: "Pinball",
 	iconID: "pinball",

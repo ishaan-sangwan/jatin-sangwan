@@ -67,7 +67,8 @@ var file_extension_icons = {
 	// emz: "image-wmf"? nope
 	wav: "sound",
 	mp3: "sound", // TODO: show blue video icon, as it's a container format that can contain video
-	ogg: "sound", // TODO: probably ditto
+	ogg: "sound",
+	mp4:"sound", // TODO: probably ditto
 	wma: "sound",
 	// "doc": "doc"?
 	"exe": "task",

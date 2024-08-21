@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 function dir_to_json() {
   local path="$1"

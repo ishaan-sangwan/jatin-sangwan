@@ -976,6 +976,24 @@ function openFileDialog(){
 	return $win;
 }
 */
+function openVideoFile(file_path){
+	var document_title = file_path ? file_name_from_path(file_path) : "Untitled";
+	var win_title = document_title + " - Video";
+	console.log(file_path)
+	var $win = make_iframe_window(
+		{
+			src: file_path,
+			icons: iconsAtTwoSizes("notepad"),
+			title: win_title,
+			outerWidth: 840,
+			outerHeight: 642,
+			resizable: true,
+		}
+	)
+	return new Task($win);	
+}
+openVideoFile.acceptsFilePaths = true
+
 
 function openURLFile(file_path) {
 	withFilesystem(function () {
@@ -1132,6 +1150,8 @@ var file_extension_associations = {
 	url: openURLFile,
 	theme: openThemeFile,
 	themepack: openThemeFile,
+	// Videos:
+	mp4: openVideoFile,
 };
 
 // Note: global systemExecuteFile called by explorer

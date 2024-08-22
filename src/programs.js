@@ -1269,18 +1269,18 @@ add_icon_not_via_filesystem({
 	open: Solitaire,
 	shortcut: true
 });
-add_icon_not_via_filesystem({
-	title: "Notepad",
-	iconID: "notepad",
-	open: Notepad,
-	shortcut: true
-});
-add_icon_not_via_filesystem({
-	title: "Winamp",
-	iconID: "winamp2",
-	open: openWinamp,
-	shortcut: true
-});
+// add_icon_not_via_filesystem({
+// 	title: "Notepad",
+// 	iconID: "notepad",
+// 	open: Notepad,
+// 	shortcut: true
+// });
+// add_icon_not_via_filesystem({
+// 	title: "Winamp",
+// 	iconID: "winamp2",
+// 	open: openWinamp,
+// 	shortcut: true
+// });
 // add_icon_not_via_filesystem({
 // 	title: "3D Pipes",
 // 	iconID: "pipes",

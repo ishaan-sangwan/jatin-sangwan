@@ -979,7 +979,7 @@ function openFileDialog(){
 function openVideoFile(file_path){
 	var document_title = file_path ? file_name_from_path(file_path) : "Untitled";
 	var win_title = document_title + " - Video";
-	console.log(file_path)
+	// console.log(file_path)
 	var $win = make_iframe_window(
 		{
 			src: file_path,
